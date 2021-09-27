@@ -7,7 +7,8 @@ from Environment import *
 from base import BaseModel
 from replay_memory import ReplayMemory
 from utils import save_pkl, load_pkl
-import tensorflow as tf
+import tensorflow.compat.v1 as tf
+tf.disable_v2_behavior()
 import matplotlib.pyplot as plt
 
 
